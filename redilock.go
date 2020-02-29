@@ -1,4 +1,4 @@
-package redis
+package redilock
 
 import (
 	"errors"
