@@ -1,4 +1,4 @@
-package redilock
+package src
 
 import (
 	"errors"
