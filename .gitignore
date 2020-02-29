@@ -1,3 +1,5 @@
 redis/
 redis-cluster/
-
+src/
+pkg/
+bin/
