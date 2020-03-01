@@ -10,9 +10,7 @@ import (
 
 // Redilock
 type Redilock struct {
-	Addr     string        // Redis address
-	Db       int           // Redis database
-	Password string        // Redis password
+
 	client   *redis.Client // Redis client
 	Key      string        // Lock key
 
@@ -27,9 +25,6 @@ func NewRedilock(key, addr, password string, db int) (*Redilock, error) {
 
 	redilock := &Redilock{
 		Key:               key,
-		Addr:              addr,
-		Db:                db,
-		Password:          password,
 		maxRetryCount:     -1,
 		retryMilliseconds: 1000,
 	}

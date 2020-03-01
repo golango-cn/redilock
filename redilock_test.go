@@ -2,7 +2,7 @@ package redilock
 
 import (
 	"fmt"
-	redilock2 "github.com/ningzi1986/redilock"
+	//redilock2 "github.com/ningzi1986/redilock"
 	"math/rand"
 	"sync"
 	"testing"
@@ -11,7 +11,7 @@ import (
 
 func Test01(t *testing.T) {
 
-	redilock, err := redilock2.NewRedilock("user:1", "192.168.1.200:6379", "", 0)
+	redilock, err := NewRedilock("user:1", "192.168.1.200:6379", "", 0)
 	if err != nil {
 		panic(err)
 	}
@@ -31,7 +31,7 @@ func Test02(t *testing.T) {
 
 	var wg sync.WaitGroup
 
-	redilock, err := redilock2.NewRedilock("user:1", "192.168.1.200:6379", "", 0)
+	redilock, err := NewRedilock("user:1", "192.168.1.200:6379", "", 0)
 	if err != nil {
 		panic(err)
 	}
