@@ -4,7 +4,7 @@
 Distributed locks and a guard dog
 
 ## install
-go get github.com/ningzi1986/redilock
+go get github.com/golango-cn/redilock
 
 ## Usage
 
